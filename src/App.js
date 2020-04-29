@@ -6,6 +6,8 @@ import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
 import Temperature from "./Temperature";
 import Humidity from "./Humidity";
+import Pulse from "./Pulse";
+import Blood_Pressure from "./Blood_Pressure"
 
 
 ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme);
@@ -75,7 +77,7 @@ class App extends Component {
                   <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
                   <circle cx="12" cy="13" r="4" />
                 </svg>
-                <strong>Nbrains</strong>
+                <strong>Preg Care</strong>
               </a>
               <button
                 className="navbar-toggler"
@@ -103,9 +105,19 @@ class App extends Component {
 
               <div className="col-md-6">
                 <div className="card mb-4 shadow-sm">
-                  <Humidity />
+                  <Blood_Pressure />
                 </div>
               </div>
+              <div className="col-md-6">
+              <div className="card mb-4 shadow-sm">
+                < Pulse/>
+              </div>
+            </div>
+            <div className="col-md-6">
+            <div className="card mb-4 shadow-sm">
+              <Humidity />
+            </div>
+          </div>
             </div>
           </div>
         </div>
