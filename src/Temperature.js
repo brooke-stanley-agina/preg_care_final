@@ -13,10 +13,9 @@ class Temperature extends Component {
   };
 
   componentDidMount() {
-    const device_id = "UGB-PILOTS_Sensor200";
-    const sensor_id = "TP";
+    const device_id = "P326";
+    const sensor_id = "T343";
 
-    
     fetch(
       `https://api.waziup.io/api/v2/devices/${device_id}/sensors/${sensor_id}`
     )

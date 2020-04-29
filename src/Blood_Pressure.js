@@ -13,8 +13,8 @@ class Blood_Pressure extends Component {
   };
 
   componentDidMount() {
-    const device_id = "humid";
-    const sensor_id = "humid";
+    const device_id = "P348";
+    const sensor_id = "T349";
 
     
     fetch(
@@ -33,7 +33,7 @@ class Blood_Pressure extends Component {
         lowerLimit: "0",
         upperLimit: "100",
         showValue: "1",
-        numberSuffix: "%",
+        numberSuffix: "mm Hg",
         theme: "fusion",
         showToolTip: "0"
       },
